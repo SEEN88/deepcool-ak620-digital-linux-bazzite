@@ -48,6 +48,6 @@ cp -f deepcool-ak-series-digital.service ~/.config/systemd/user/
 cp -f deepcool-ak-series-digital-restart.service ~/.config/systemd/user/
 cp -f deepcool-ak-series-digital.py ~/.local/bin/deepcool-ak-series-digital.py
 
-systemctl enable deepcool-ak-series-digital.service
-systemctl enable deepcool-ak-series-digital-restart.service
-systemctl start deepcool-ak-series-digital.service
+systemctl --user enable deepcool-ak-series-digital.service
+systemctl --user enable deepcool-ak-series-digital-restart.service
+systemctl --user start deepcool-ak-series-digital.service
