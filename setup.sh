@@ -4,7 +4,9 @@ declare -A PRODUCTS
 
 PRODUCTS=(
     [ak620]="0x0002"
+    [AK620]="0x0002"
     [ak500s]="0x0004"
+    [AK500s]="0x0004"
 )
 
 usage() {
