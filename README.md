@@ -26,7 +26,7 @@ Available supported models:
 
     Open a terminal and run the following commands:
     ```bash
-    pip install hid
+    pip install hidapi
     pip install psutil
     ```
     Note: If you encounter permission errors, try adding --user to install the packages for your user only or use sudo to install them system-wide (not recommended for `pip`).
