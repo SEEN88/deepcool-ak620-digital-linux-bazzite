@@ -3,7 +3,8 @@ Description=Displaying the current temperature and utilization on the Deepcool A
 
 [Service]
 Type=simple
-ExecStart= /usr/bin/python ~/.local/bin/deepcool-ak-series-digital.py
+WorkingDir=~
+ExecStart= /usr/bin/python .local/bin/deepcool-ak-series-digital.py
 Restart=always
 
 [Install]
