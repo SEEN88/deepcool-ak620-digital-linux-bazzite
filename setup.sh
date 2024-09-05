@@ -44,10 +44,10 @@ done
 sed -i "/PRODUCT_ID = 0/c\PRODUCT_ID = ${PRODUCTS[${PRODUCT}]}" deepcool-ak-series-digital.py
 sed -i "/SENSOR = \"\"/c\SENSOR = \"${SENSOR}\"" deepcool-ak-series-digital.py
 
-sudo cp -f deepcool-ak-series-digital.service /lib/systemd/system/
-sudo cp -f deepcool-ak-series-digital-restart.service /lib/systemd/system/
-sudo cp -f deepcool-ak-series-digital.py /usr/bin/deepcool-ak-series-digital.py
+cp -f deepcool-ak-series-digital.service ~/.config/systemd/user/
+cp -f deepcool-ak-series-digital-restart.service ~/.config/systemd/user/
+cp -f deepcool-ak-series-digital.py ~/.local/bin/deepcool-ak-series-digital.py
 
-sudo systemctl enable deepcool-ak-series-digital.service
-sudo systemctl enable deepcool-ak-series-digital-restart.service
-sudo systemctl start deepcool-ak-series-digital.service
+systemctl enable deepcool-ak-series-digital.service
+systemctl enable deepcool-ak-series-digital-restart.service
+systemctl start deepcool-ak-series-digital.service
