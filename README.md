@@ -33,12 +33,12 @@ Available supported models:
 
 2. **Clone the Repository**: The script and necessary configuration files are hosted on GitHub. Use git to clone the repository to your local machine.
     ```bash
-    git clone https://github.com/raghulkrishna/deepcool-ak620-digital-linux
+    git clone https://github.com/SEEN88/deepcool-ak620-digital-linux-bazzite
     ```
 
 3. **Navigate to the Project Directory**: Change your current directory to the newly cloned project folder.
     ```bash
-    cd deepcool-ak620-digital-linux
+    cd deepcool-ak620-digital-linux-bazzite
     ```
 
 4. **Look up the hardware temperature sensor**: Retrieve hardware temperature sensor label in the system. Run the following Python code snippet.
